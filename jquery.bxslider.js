@@ -261,10 +261,10 @@
 				slider.settings.pager = false;
 			}
 			// preload all images, then perform final DOM / CSS modifications that depend on images being loaded
-			loadElements(preloadSelector, start);
+			start();
 		}
 
-		var loadElements = function(selector, callback){
+		/*var loadElements = function(selector, callback){
 			var total = selector.find('img, iframe').length;
 			if (total == 0){
 				callback();
@@ -278,7 +278,7 @@
 				  if(this.complete) $(this).load();
 				});
 			});
-		}
+		}*/
 
 		/**
 		 * Start the slider
